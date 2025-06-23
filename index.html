@@ -73,7 +73,14 @@
       font-size: 1rem;
       margin-bottom: 1.2rem;
     }
-
+select {
+  color: var(--text); /* или #1C1C1C */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  background-image: none;
+}
     .checkbox-group {
       display: flex;
       flex-direction: column;
@@ -172,7 +179,7 @@
     <form id="feedback-form" novalidate>
       <label for="rating">Оцінка *</label>
       <select id="rating" style="height: 3.5rem;" required>
-        <option value="">Оберіть</option>
+        <option value="" style="color:blue">Оберіть</option>
         <option value="5">⭐️⭐️⭐️⭐️⭐️ — Відмінно</option>
         <option value="4">⭐️⭐️⭐️⭐️ — Добре</option>
         <option value="3">⭐️⭐️⭐️ — Нормально</option>
